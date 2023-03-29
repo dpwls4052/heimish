@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="layout.css">
 </head>
+
 <body>
     <div class="click">
         <button id="Btn_modal1" class="button_animation">CLICK ME!</button>
@@ -14,33 +16,35 @@
     <div id="Modal1" class="modal_wrap" style="display: none;">
         <div class="modal_container">
             <div class="close">
-                <a class="close_button"><img src="/images/close.png" alt=""></a></div>
+                <a class="close_button"><img src="/images/close.png" alt=""></a>
+            </div>
             <div class="modal_contents">
-                 <img src="/images/photo1.jpg">
-                 <img src="/images/photo2.jpg">
-                 <img src="/images/photo3.jpg">
-                 <img src="/images/photo4.jpg">
-                 <img src="/images/photo5.jpg">
-                 <img src="/images/photo6.jpg">
-                 <img src="/images/photo7.jpg">
-                 <img src="/images/photo8.jpg">
-                 <img src="/images/photo9.jpg">
-                 <img src="/images/photo11.jpg">
-                 <img src="/images/photo10.jpg">
+                <img src="/images/photo1.jpg">
+                <img src="/images/photo2.jpg">
+                <img src="/images/photo3.jpg">
+                <img src="/images/photo4.jpg">
+                <img src="/images/photo5.jpg">
+                <img src="/images/photo6.jpg">
+                <img src="/images/photo7.jpg">
+                <img src="/images/photo8.jpg">
+                <img src="/images/photo9.jpg">
+                <img src="/images/photo11.jpg">
+                <img src="/images/photo10.jpg">
             </div>
         </div>
     </div>
-<script>
- const modal1 = document.getElementById("Modal1")
+    <script>
+        const modal1 = document.getElementById("Modal1")
         const btnModal1 = document.getElementById("Btn_modal1")
 
         btnModal1.addEventListener("click", e => {
             modal1.style.display = "flex"
         })
- const closeBtn1 = modal1.querySelector(".close_button")
+        const closeBtn1 = modal1.querySelector(".close_button")
         closeBtn1.addEventListener("click", e => {
             modal1.style.display = "none"
         })
-</script>
+    </script>
 </body>
+
 </html>
